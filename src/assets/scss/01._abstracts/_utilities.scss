@@ -1,0 +1,30 @@
+/*!
+ *
+ * ======================================================================
+ * 00. UTILITIES
+ * ======================================================================
+ * 
+ */
+
+
+ @if $workspace == local {
+
+  @include media-breakpoint-down(md) {
+
+    body {
+      background: #d2f6fc;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+
+    body {
+      background: #dbedf3;
+    }
+  }
+
+  .test {
+    background: #d5eeff;
+  }
+
+}

@@ -1,0 +1,158 @@
+/*!
+ *
+ * ======================================================================
+ * 00. COLORS
+ * ======================================================================
+ * 
+ */
+
+ /**
+ * CSS VARIABLE SYNTAX
+ * -------------------------------------------------------------------
+ */
+:root {
+  --base: #fff9e0;   
+}
+
+
+/**
+* COLORS
+* -------------------------------------------------------------------
+*/
+
+// ==> palette
+$palette-astronaut: #254E70;
+$palette-calypso: #2e5685;
+$palette-spray: #8EE3EF;
+$palette-shadow-green: #8FC7BE;
+$palette-amaranth: #EF3054;
+
+// ==> basee
+$clr-base: #f4f4f4;
+
+// ==> primary
+$clr-primary: #52fde8;
+$clr-primary-light: #a4fbed;
+$clr-primary-extra-light: #00ffe2;
+$clr-primary-dark:#008080;
+$clr-primary-extra-dark: #137083 ; 
+
+// ==> secondary
+$clr-secondary:#ce7d00;
+$clr-secondary-light: #FF9966;
+$clr-secondary-extra-light: #FFB900;
+$clr-secondary-dark: #CC6633; 
+$clr-secondary-extra-dark: #935900; 
+
+// ==> grey
+$clr-grey: #928a97;
+$clr-grey-light: #AAA;
+$clr-grey-extra-light: #CCC;
+$clr-grey-dark: #999;
+$clr-grey-extra-dark:#777;
+
+// ==> white
+$clr-white: #fff;
+$clr-white-light: #f9f9f9;
+$clr-white-extra-light: #f4f4f4;
+$clr-white-dark: #f1fcfd;
+$clr-white-extra-dark:#eee;
+
+// ==> black
+$clr-black: #000;
+$clr-black-light: #454545;
+$clr-black-extra-light:#7f8080;
+$clr-black-dark: #292929;
+$clr-black-extra-dark: #333;
+
+// ==> border
+$clr-border: #3a4750;
+
+// ==> link
+$clr-link: #3a4750;
+
+
+// ==> functional
+$x-clr-default-text: $palette-astronaut;
+$x-clr-deemphasised-text: $palette-shadow-green;
+$x-clr-borders: $palette-calypso;
+$x-clr-destructive: $palette-amaranth;
+
+// ==> table component 
+$clr-table-header-text: $palette-astronaut;
+$clr-table-text: $x-clr-default-text;
+$clr-table-border: $x-clr-borders;
+
+/**
+ * COLORS OF STATES
+ * -------------------------------------------------------------------
+ */
+
+// ==> colors default 
+$clr-default : #75bedb;
+$clr-default-light: #91f3fc;
+$clr-default-dark:#0962ea;
+// ==> colors info
+$clr-info: #9279c3;
+$clr-info-light: #8d42f5;
+$clr-info-dark:#2f2342;
+// ==> colors wraning
+$clr-warning:#ed8864;
+$clr-warning-light:#e42f45;
+$clr-warning-dark:#900c27;
+// ==> colors error
+$clr-error: #e67478;
+$clr-error-light: #e42f45;
+$clr-error-dark:#900c27;
+// ==> colors success
+$clr-success: #79D1AD;
+$clr-success-light:#50c19a;
+$clr-success-dark:#00541a;
+// ==> colors danger
+$clr-danger: #900c27;
+$clr-danger-light: #e42f45;
+$clr-danger-dark: #900c27;
+// ==> colors alert
+$clr-alert: #ffc057;
+$clr-alert-light:#ffe084;
+$clr-alert-: #ffc057;
+
+// ==> UI Colors States Map
+$colors-states: (
+ default        : $clr-default,
+ success        : $clr-success,
+ error          : $clr-error,
+ warning        : $clr-warning,
+ info           : $clr-info
+);
+
+/**
+ * COLORS SOCIAL MEDIA
+ * -------------------------------------------------------------------
+ */
+
+ // ==> Colors Social media
+$clr-facebook  : #3B5998;
+$clr-twitter   : #00ACEE;
+$clr-pinterest : #CC2127;
+$clr-linkedin  : #0E76A8;
+$clr-youtube   : #E52D27;
+$clr-whatsapp  : #25D366;
+$clr-telegram  : #0088CC;
+$clr-google    : #a4c639;
+$clr-email     : #555;
+$clr-print     : #555;
+
+// ==> UI Colors Social Media Map
+$social-media-colors: (
+  facebook        : $clr-facebook,
+  twitter         : $clr-twitter,
+  linkedin        : $clr-linkedin,
+  pinterest       : $clr-pinterest,
+  youtube         : $clr-youtube,
+  whatsapp        : $clr-whatsapp,
+  telegram        : $clr-telegram,
+  google          : $clr-google,
+  email           : $clr-email,
+  print           : $clr-print
+);
