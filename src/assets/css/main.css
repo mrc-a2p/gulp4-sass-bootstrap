@@ -7518,6 +7518,14 @@ td {
 .subtext {
   color: var(--secondary-color); }
 
+h1 {
+  font-family: "Merriweather", Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000;
+  letter-spacing: -0.02em; }
+
 h2 {
   --h2-color: $clr-gray;
   color: var(--h2-color); }
@@ -7622,25 +7630,45 @@ h2 {
   .social-media-icon--print {
     background-color: #555; }
   .social-media-icon--facebook {
-    background-image: url(‘assets/icons/facebook.svg’); }
+    background-image: url(‘assets/icons/facebook.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--twitter {
-    background-image: url(‘assets/icons/twitter.svg’); }
+    background-image: url(‘assets/icons/twitter.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--linkedin {
-    background-image: url(‘assets/icons/linkedin.svg’); }
+    background-image: url(‘assets/icons/linkedin.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--pinterest {
-    background-image: url(‘assets/icons/pinterest.svg’); }
+    background-image: url(‘assets/icons/pinterest.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--youtube {
-    background-image: url(‘assets/icons/youtube.svg’); }
+    background-image: url(‘assets/icons/youtube.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--whatsapp {
-    background-image: url(‘assets/ywhatsapp.png’); }
+    background-image: url(‘assets/ywhatsapp.png’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--telegram {
-    background-image: url(‘assets/icons/telegram.svg’); }
+    background-image: url(‘assets/icons/telegram.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--google {
-    background-image: url(‘assets/icons/google.svg’); }
+    background-image: url(‘assets/icons/google.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--email {
-    background-image: url(‘assets/icons/email.svg’); }
+    background-image: url(‘assets/icons/email.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   .social-media-icon--print {
-    background-image: url(‘assets/icons/print.svg’); }
+    background-image: url(‘assets/icons/print.svg’);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
 
 /*!
  *

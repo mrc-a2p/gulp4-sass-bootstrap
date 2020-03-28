@@ -55,7 +55,20 @@ td {
   color: var(--secondary-color);
 }
 
+h1 {
+  @include font(
+    $ff: $ff-primary,
+    $fs: $fs-verysmall,
+    $fw: $fw-bold,
+    $lh: 24px,
+    $ls: -20,
+    $co: $clr-black,
+  );
+
+}
+
 h2 {
   --h2-color: $clr-gray;
   color: var(--h2-color);
 }
+
