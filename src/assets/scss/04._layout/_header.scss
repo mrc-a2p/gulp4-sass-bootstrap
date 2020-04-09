@@ -9,3 +9,30 @@
  .header {
     @include clearfix
   }
+
+.main-header{
+    display:flex;
+    background-color: black;
+    padding: 30px;
+
+    &__logo{
+        margin: 0 0 0 35px;
+        flex: 1;
+    }
+
+    &__title{
+        color: white;
+        text-align: left;
+        
+    }
+
+    &__link{
+        color:white;
+        text-decoration: none;
+        
+    }
+
+
+}
+
+

@@ -1,0 +1,29 @@
+/*!
+ *
+ * ======================================================================
+ * 00. HERO
+ * ======================================================================
+ * 
+ */
+
+ .main-hero{
+    display: flex;
+    align-items: center;
+    /* margenes */
+    margin-bottom: 15px;
+    /* /margenes */
+    padding: var(--space);
+    height: 300px;
+    background-image: url('../../../assets/images/demo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #464646;
+
+    &__title{
+        text-shadow: 1px 2px 3px #fff;
+        padding: var(--space);
+        margin: 20px;
+}
+}
+

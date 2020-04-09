@@ -7165,7 +7165,8 @@ a.text-dark:hover, a.text-dark:focus {
  * -------------------------------------------------------------------
  */
 :root {
-  --base: #fff9e0; }
+  --base: #fff9e0;
+  --tomato:  #FF6347; }
 
 /**
 * COLORS
@@ -7482,6 +7483,11 @@ a.text-dark:hover, a.text-dark:focus {
  * ======================================================================
  * 
  */
+/**
+  * BASE
+  * -------------------------------------------------------------------
+  * 
+  */
 body {
   color: #000;
   background: #454545;
@@ -7518,6 +7524,109 @@ td {
 .subtext {
   color: var(--secondary-color); }
 
+h2 {
+  --h2-color: $clr-gray;
+  color: var(--h2-color); }
+
+/*
+  WRAPPER
+  A utility with a max width that contains child elements and horizontal centers them
+*/
+.wrapper {
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+/* Presentational styles */
+body {
+  background: #efefef;
+  padding: 1rem 0;
+  line-height: 1.4;
+  font-family: sans-serif; }
+
+.ul-li {
+  padding: 5rem 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background: #22a6b3;
+  color: #ffffff; }
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  margin: auto;
+  background: black; }
+
+.body-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #a5c3e2; }
+
+.content-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: 0 2%; }
+
+.nav-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 240px;
+  flex: 0 0 240px;
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  background: gray; }
+
+.aside-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 120px;
+  flex: 0 0 120px;
+  background: blue; }
+
+header,
+footer {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto; }
+
+header,
+footer,
+.content-container,
+.nav-container,
+.aside-container {
+  background: #0e72da;
+  border: 1px solid #130e7d;
+  padding: 1em;
+  color: #fff;
+  text-align: center; }
+
 h1 {
   font-family: "Merriweather", Helvetica, sans-serif;
   font-size: 12px;
@@ -7525,10 +7634,18 @@ h1 {
   line-height: 24px;
   color: #000;
   letter-spacing: -0.02em; }
+  @media (max-width: 991.98px) {
+    h1 {
+      font-family: "Rubik", Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #FF6347;
+      letter-spacing: -0.02em; } }
 
 h2 {
   --h2-color: $clr-gray;
-  color: var(--h2-color); }
+  color: var(--tomato); }
 
 /**
   * components/ (or modules/)/
@@ -7630,7 +7747,7 @@ h2 {
   .social-media-icon--print {
     background-color: #555; }
   .social-media-icon--facebook {
-    background-image: url(‘assets/icons/facebook.svg’);
+    background-image: url(‘./assets/icons/facebook.svg’);
     background-repeat: no-repeat;
     background-attachment: fixed; }
   .social-media-icon--twitter {
@@ -7691,6 +7808,31 @@ h2 {
  * ======================================================================
  * 
  */
+/*!
+ *
+ * ======================================================================
+ * 00. HERO
+ * ======================================================================
+ * 
+ */
+.main-hero {
+  display: flex;
+  align-items: center;
+  /* margenes */
+  margin-bottom: 15px;
+  /* /margenes */
+  padding: var(--space);
+  height: 300px;
+  background-image: url("../../../assets/images/demo.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646; }
+  .main-hero__title {
+    text-shadow: 1px 2px 3px #fff;
+    padding: var(--space);
+    margin: 20px; }
+
 /**
   * layout/
   * -------------------------------------------------------------------
@@ -7715,6 +7857,20 @@ h2 {
   display: table;
   clear: both; }
 
+.main-header {
+  display: flex;
+  background-color: black;
+  padding: 30px; }
+  .main-header__logo {
+    margin: 0 0 0 35px;
+    flex: 1; }
+  .main-header__title {
+    color: white;
+    text-align: left; }
+  .main-header__link {
+    color: white;
+    text-decoration: none; }
+
 /*!
  *
  * ======================================================================
@@ -7722,6 +7878,20 @@ h2 {
  * ======================================================================
  * 
  */
+.nav-top {
+  width: 50%;
+  margin: auto; }
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  color: white; }
+
+.nav-menu {
+  flex: .5; }
+
 /*!
  *
  * ======================================================================
@@ -7729,6 +7899,17 @@ h2 {
  * ======================================================================
  * 
  */
+.main-footer {
+  padding: 20px;
+  display: flex;
+  color: white;
+  background-color: #1b2127;
+  justify-content: space-between; }
+  .main-footer__title {
+    margin: 0 0 0 15px; }
+  .main-footer__link {
+    color: white; }
+
 /*!
  *
  * ======================================================================
@@ -7747,6 +7928,13 @@ h2 {
  *
  * ======================================================================
  * 00. SIDEBAR
+ * ======================================================================
+ * 
+ */
+/*!
+ *
+ * ======================================================================
+ * 00. SECTIONS
  * ======================================================================
  * 
  */
