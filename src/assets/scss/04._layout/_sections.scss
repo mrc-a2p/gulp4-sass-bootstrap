@@ -12,6 +12,8 @@
  * -------------------------------------------------------------------
  */
 .main-project{
+    $this: &;
+
     /* margenes */
     border-radius: 10px;
     margin-bottom: 15px;
@@ -91,6 +93,28 @@
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
         /* /bordeado */     
+
+
+    }
+
+
+
+    &.has-big{
+        #{$this}{
+            &__article{
+                background-color: green;
+
+            }
+
+            &__title{
+                font-size: 50px;
+            }
+
+            &__description{
+                
+                font-size: 30px;
+            }
+        }
 
 
     }

@@ -8044,6 +8044,12 @@ h2 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     /* /bordeado */ }
+  .main-project.has-big .main-project__article {
+    background-color: green; }
+  .main-project.has-big .main-project__title {
+    font-size: 50px; }
+  .main-project.has-big .main-project__description {
+    font-size: 30px; }
 
 /**
  * CONTACT SECTION 
