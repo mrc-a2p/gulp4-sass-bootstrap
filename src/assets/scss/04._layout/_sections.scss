@@ -43,6 +43,15 @@
 
     &__title{
         margin: 20px 0;
+
+        @include font(
+        $ff: $ff-primary,
+        $fs: 40px,
+        $fw: $fw-bold,
+        $lh: 1em,
+        $ls: -20,
+        $co: white,
+        );
     }
 
     &__image{

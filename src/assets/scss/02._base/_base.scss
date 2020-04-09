@@ -195,28 +195,28 @@ footer,
 
 
 h1 {
-  @include font(
-    $ff: $ff-primary,
-    $fs: $fs-verysmall,
-    $fw: $fw-bold,
-    $lh: 24px,
-    $ls: -20,
-    $co: $clr-black,
-  );
+  // @include font(
+  //   $ff: $ff-primary,
+  //   $fs: $fs-verysmall,
+  //   $fw: $fw-bold,
+  //   $lh: 24px,
+  //   $ls: -20,
+  //   $co: $clr-black,
+  // );
 
-  @include media-breakpoint-down(md) {
+  // @include media-breakpoint-down(md) {
 
-    @include font(
-    $ff: $ff-secondary,
-    $fs: $fs-verybig,
-    $fw: $fw-regular,
-    $lh: 24px,
-    $ls: -20,
-    $co: $clr-orange,
-    );
+  //   @include font(
+  //   $ff: $ff-secondary,
+  //   $fs: $fs-verybig,
+  //   $fw: $fw-regular,
+  //   $lh: 24px,
+  //   $ls: -20,
+  //   $co: $clr-orange,
+  //   );
 
 
-  }
+  // }
 
 }
 
