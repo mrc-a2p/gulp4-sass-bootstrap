@@ -1,0 +1,55 @@
+/*!
+ *
+ * ======================================================================
+ * 00. SOCIAL
+ * ======================================================================
+ * 
+ */
+
+ .main-social{
+     $this: &;
+
+     &__link{
+
+         display: inline-block;
+         width: 50px;
+         height: 50px;
+         margin: 0 10px; 
+
+         &.is-twitter {
+            background-image: url(../../../assets/images/twitter.svg);
+            background-size: 50px 50px;
+
+        }
+
+        &.is-facebook {
+            background-image: url(../../../assets/images/facebook.svg);
+            background-size: 50px 50px;
+
+        }
+
+        &.is-instagram {
+            background-image: url(../../../assets/images/instagram.svg);
+            background-size: 50px 50px;
+
+        }
+        
+        &.is-github {
+            background-image: url(../../../assets/images/git-hub.svg);
+            background-size: 50px 50px;
+
+        }
+
+        
+
+     }
+
+
+
+ }
+
+
+
+
+
+

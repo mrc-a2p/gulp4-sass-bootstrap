@@ -24,6 +24,16 @@
         text-shadow: 1px 2px 3px #fff;
         padding: var(--space);
         margin: 20px;
+        font-size: 50px;
+//         @include font(
+//     $ff: $ff-primary,
+//     $fs: $fs-verysmall,
+//     $fw: $fw-bold,
+//     $lh: 24px,
+//     $ls: -20,
+//     $co: $clr-black,
+//   );
+
 }
 }
 

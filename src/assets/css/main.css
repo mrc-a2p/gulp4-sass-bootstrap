@@ -7647,6 +7647,27 @@ h2 {
   --h2-color: $clr-gray;
   color: var(--tomato); }
 
+* {
+  margin: 0;
+  /* padding: 0; */
+  list-style: none;
+  text-decoration: none;
+  /* border: none; */
+  outline: none; }
+
+:root {
+  /*------ Colores */
+  --green-color: #7ACC2D;
+  --black-color: #313337;
+  --white-color: white;
+  /*------ Tipografía */
+  --normal:12px;
+  /*------ Espaciado */
+  --space:10px;
+  --space-2:20px;
+  /*------ Box shadow*/
+  --box:0px 0 2px 1px #e6e5e9; }
+
 /**
   * components/ (or modules/)/
   * -------------------------------------------------------------------
@@ -7811,6 +7832,31 @@ h2 {
 /*!
  *
  * ======================================================================
+ * 00. SOCIAL
+ * ======================================================================
+ * 
+ */
+.main-social__link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px; }
+  .main-social__link.is-twitter {
+    background-image: url(../../../assets/images/twitter.svg);
+    background-size: 50px 50px; }
+  .main-social__link.is-facebook {
+    background-image: url(../../../assets/images/facebook.svg);
+    background-size: 50px 50px; }
+  .main-social__link.is-instagram {
+    background-image: url(../../../assets/images/instagram.svg);
+    background-size: 50px 50px; }
+  .main-social__link.is-github {
+    background-image: url(../../../assets/images/git-hub.svg);
+    background-size: 50px 50px; }
+
+/*!
+ *
+ * ======================================================================
  * 00. HERO
  * ======================================================================
  * 
@@ -7831,7 +7877,8 @@ h2 {
   .main-hero__title {
     text-shadow: 1px 2px 3px #fff;
     padding: var(--space);
-    margin: 20px; }
+    margin: 20px;
+    font-size: 50px; }
 
 /**
   * layout/
@@ -7938,6 +7985,101 @@ h2 {
  * ======================================================================
  * 
  */
+/**
+ * PROJECT SECTION
+ * -------------------------------------------------------------------
+ */
+.main-project {
+  /* margenes */
+  border-radius: 10px;
+  margin-bottom: 15px;
+  /* /margenes */
+  padding: var(--space);
+  /* bordeado */
+  border: 1px solid gray;
+  border-radius: 10px;
+  /* border-top-left-radius: 50px; */
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* /bordeado */ }
+  .main-project__article {
+    display: flex;
+    padding: var(--space);
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: var(--space);
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between; }
+  .main-project__title {
+    margin: 20px 0; }
+  .main-project__image {
+    width: 100%;
+    margin: 0px 0px 0px 120px; }
+  .main-project__img {
+    width: 100%; }
+  .main-project__course {
+    margin: 20px 0; }
+  .main-project__date {
+    margin: 20px 0; }
+  .main-project__url {
+    margin: 20px 0; }
+  .main-project__description {
+    margin: 20px 0;
+    font-size: 20px; }
+  .main-project__figure {
+    margin: 0px 0px 0px 120px;
+    width: 100%; }
+  .main-project__img {
+    width: 100%; }
+  .main-project.is-briefcase {
+    /* bordeado */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* border-top-left-radius: 50px; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* /bordeado */ }
+
+/**
+ * CONTACT SECTION 
+ * -------------------------------------------------------------------
+ */
+.main-contact {
+  height: 150px;
+  display: flex;
+  color: white;
+  background-color: blue;
+  align-items: center;
+  justify-content: space-between; }
+  .main-contact__form {
+    margin: 0 0 0 35px; }
+  .main-contact__input {
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: gray;
+    padding: 10px 20px 10px 25px;
+    background-image: url("../../../assets/images/twitter.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px; }
+  .main-contact__button {
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 100%; }
+
+/* .title-contact{
+    font-family: ;
+} */
 /**
   * pages/
   * -------------------------------------------------------------------

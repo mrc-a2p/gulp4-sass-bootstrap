@@ -6,4 +6,163 @@
  * 
  */
 
- 
+
+/**
+ * PROJECT SECTION
+ * -------------------------------------------------------------------
+ */
+.main-project{
+    /* margenes */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* /margenes */
+    padding: var(--space);
+    /* bordeado */
+    border: 1px solid gray;
+    border-radius: 10px;
+    /* border-top-left-radius: 50px; */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* /bordeado */
+
+    &__article{
+        display: flex;
+        padding: var(--space);
+        margin: 20px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        padding: var(--space);
+        margin:20px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        margin: 20px 0;
+    }
+
+    &__image{
+        width:100%;
+        margin: 0px 0px 0px 120px;
+    }
+    
+    &__img{
+        width: 100%;
+
+    } 
+
+    &__course{
+        margin: 20px 0;
+    }
+
+    &__date{
+        margin: 20px 0;
+    }
+
+    &__url{
+        margin: 20px 0;
+    }
+
+    &__description{
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    &__figure{
+        margin: 0px 0px 0px 120px;
+        width: 100%;
+    }
+
+    &__img{
+        width: 100%;
+    }
+
+      
+
+    &.is-briefcase {
+
+        /* bordeado */
+        border: 1px solid gray;
+        border-radius: 10px;
+        /* border-top-left-radius: 50px; */
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* /bordeado */     
+
+
+    }
+
+
+}
+
+
+
+/**
+ * CONTACT SECTION 
+ * -------------------------------------------------------------------
+ */
+
+.main-contact{
+    height: 150px;
+    display: flex;
+    color: white;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-between;
+
+    &__form{
+        margin: 0 0 0 35px;
+    }
+
+    &__title{
+        
+    }
+
+    
+
+    &__input{
+        margin-top: 10px;
+        border-radius: 5px;
+        border-color: gray;
+        padding: 10px 20px 10px 25px;
+        background-image: url('../../../assets/images/twitter.svg');
+        background-size: 20px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 5px;
+    }
+
+    &__button{
+       display: block;
+        margin-top: 10px;
+        background: transparent;
+        color: white;
+        padding: 10px 0;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+
+/* .title-contact{
+    font-family: ;
+} */
+
+
+
+
+
+
+
+
+
+
+
