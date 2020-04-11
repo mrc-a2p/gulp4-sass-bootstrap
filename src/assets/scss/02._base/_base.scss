@@ -102,8 +102,8 @@ h2 {
 
 body {
   background: #efefef;
-  padding: 1rem 0;
-  line-height: 1.4;
+  // padding: 1rem 0;
+  // line-height: 1.4;
   font-family: sans-serif;
 }
 
@@ -269,4 +269,20 @@ h2 {
   --box:0px 0 2px 1px #e6e5e9;
 } 
 
+
+.main-demo{
+  @include grid();
+
+  &__container {}
+  &__wrap {}
+  &__right{
+    @include grid-col(5);
+    background:blue;
+  }
+  &__left{
+    @include grid-col(5);
+    background:red;
+  }
+  
+}
 

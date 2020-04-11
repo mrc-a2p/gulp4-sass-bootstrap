@@ -180,14 +180,44 @@
 
 
 
+
+
 }
 
 
+.main-work{
+    margin: 20px;
+  @include grid();
 
+  &__container {}
+  &__wrap {}
+  &__right{
+    @include grid-col(6);
+    background:green;
+  }
+  &__left{
+    @include grid-col(6);
+    background:orange;
+  }
 
-/* .title-contact{
-    font-family: ;
-} */
+   @include media-breakpoint-down(md) {
+       flex-direction: column;
+
+       &__right{
+           @include grid-col(12);
+
+       }
+
+       &__left{
+           @include grid-col(12);
+
+       }
+
+   
+
+  }
+  
+}
 
 
 

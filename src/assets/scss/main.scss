@@ -33,10 +33,10 @@
   * base/
   * -------------------------------------------------------------------
   */
-
+@import "02._base/normalize";
 @import "02._base/reset";
-@import "02._base/typography";
 @import "02._base/base";
+@import "02._base/typography";
 
 /**
   * components/ (or modules/)/
