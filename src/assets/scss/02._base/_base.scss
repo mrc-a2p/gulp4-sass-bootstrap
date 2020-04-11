@@ -6,32 +6,6 @@
  * 
  */
 
-/**
-  * FLEXBOX GRID MIXINS (VARIABLES)
-  * -------------------------------------------------------------------
-  * CSS: @include grid(); ->  @include grid-col(3); | @include grid-col(9);
-  * HTML: grid -> grid__col-3 | grid__col-9
-  */
-
-$default-grid-columns: 12;
-$default-grid-gutter: 2%;
-
-.grid {
-	@include grid($gutter: $default-grid-gutter);
-
-	@for $i from 1 through $default-grid-columns {
-		> .grid__col-#{$i} {
-			@include grid-col($col: $i, $grid-columns: $default-grid-columns, $gutter: $default-grid-gutter);
-		}
-	}
-}
-
- /**
-  * BASE
-  * -------------------------------------------------------------------
-  * 
-  */
-
 body {
   color: $clr-black;
   background: $clr-black-light;
@@ -39,7 +13,8 @@ body {
 }
 
 body {
-    background-color: $clr-base;
+    // background-color: $clr-base;
+    background:#f8f7f5;
   }
   
   .Panel {
@@ -116,17 +91,21 @@ body {
 }
 
 
-// .container-demo{
-//   @include grid();
-// }
-// .demo-omde{
-//   @include grid-col(3);
-// }
-// .omde-demo{
-//   @include grid-col(9);
-// }
+.main-demo{
+  @include grid();
 
-
+  &__container {}
+  &__wrap {}
+  &__right{
+    @include grid-col(3);
+    background:blue;
+  }
+  &__left{
+    @include grid-col(9);
+    background:red;
+  }
+  
+}
 
 .page-container{
   width: 100%;
@@ -210,79 +189,6 @@ footer,
   border: 1px solid #130e7d;
   padding: 1em;
   color: #fff;
-  text-align: center;
-}
-
-
-h1 {
-  // @include font(
-  //   $ff: $ff-primary,
-  //   $fs: $fs-verysmall,
-  //   $fw: $fw-bold,
-  //   $lh: 24px,
-  //   $ls: -20,
-  //   $co: $clr-black,
-  // );
-
-  // @include media-breakpoint-down(md) {
-
-  //   @include font(
-  //   $ff: $ff-secondary,
-  //   $fs: $fs-verybig,
-  //   $fw: $fw-regular,
-  //   $lh: 24px,
-  //   $ls: -20,
-  //   $co: $clr-orange,
-  //   );
-
-
-  // }
-
-}
-
-
-h2 {
-  --h2-color: $clr-gray;
-  color: var(--tomato);
-  
-}
-
-*{
-	margin: 0;
-	/* padding: 0; */
-	list-style: none;
-	text-decoration: none;
-	/* border: none; */
-	outline: none;
-}
-:root{
-  /*------ Colores */
-  --green-color: #7ACC2D;
-  --black-color: #313337;
-  --white-color: white;
-  /*------ Tipografía */
-  --normal:12px;
-  /*------ Espaciado */
-  --space:10px;
-  --space-2:20px;
-  /*------ Box shadow*/
-  --box:0px 0 2px 1px #e6e5e9;
-} 
-
-
-.main-demo{
-  @include grid();
-
-  &__container {}
-  &__wrap {}
-  &__right{
-    @include grid-col(5);
-    background:blue;
-  }
-  &__left{
-    @include grid-col(5);
-    background:red;
-  }
-  
+  // text-align: center;
 }
 

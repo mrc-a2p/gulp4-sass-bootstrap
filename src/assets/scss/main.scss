@@ -16,8 +16,10 @@
   * -------------------------------------------------------------------
   * Declaración de variables
   */
-@import "01._abstracts/colors";
+
 @import "01._abstracts/variables";
+@import "01._abstracts/colors";
+@import "01._abstracts/fonts";
 @import "01._abstracts/icons";
 @import "01._abstracts/settings";
 @import "01._abstracts/breakpoints";
@@ -33,10 +35,12 @@
   * base/
   * -------------------------------------------------------------------
   */
+
 @import "02._base/normalize";
 @import "02._base/reset";
 @import "02._base/base";
 @import "02._base/typography";
+
 
 /**
   * components/ (or modules/)/
@@ -47,8 +51,7 @@
 @import "03._components/slider";
 @import "03._components/cover";
 @import "03._components/dropdown";
-@import "03._components/social";
-@import "03._components/hero";
+@import "03._components/cards";
 
 
 /**
@@ -63,7 +66,10 @@
 @import "04._layout/sidebar";
 @import "04._layout/forms";
 @import "04._layout/sidebar";
-@import "04._layout/sections";
+@import "04._layout/content";
+@import "04._layout/article-list";
+@import "04._layout/article-viewer";
+@import "04._layout/newsletter-flow";
 
 
 /**
