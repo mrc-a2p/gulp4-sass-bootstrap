@@ -7583,6 +7583,39 @@ a.text-dark:hover, a.text-dark:focus {
 /*!
  *
  * ======================================================================
+ * 00. TYPOGRAPHY UTILITIES
+ * ======================================================================
+ * 
+ */
+/**
+ * STRING REPLACE
+ * -------------------------------------------------------------------
+ */
+/**
+ * FONT FACE
+ * -------------------------------------------------------------------
+ * @include font-face(Samplino, fonts/Samplino);
+ * @include font-face("Samplina Neue", fonts/SamplinaNeue, bold, italic);
+ * @include font-face(Samplinoff, fonts/Samplinoff, null, null, woff);
+ * @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+ */
+/**
+ * FONT FACE
+ * -------------------------------------------------------------------
+ * This following font-face mixin, you can make that tedious task much faster. 
+ * Make sure that you use the right file path within the url() function.
+ *
+ * Genrate-font-face: https://onlinefontconverter.com/
+ * 
+ * @include font-face("My Font", my-font);
+ *
+ * use: @include font-face('Arial Narrow', 'ArialNarrow/ArialNarrow', normal, normal);
+ * use: @include font-face('Arial Narrow', 'ArialNarrow/ArialNarrow_bolditalic', bold, italic);
+ *
+ */
+/*!
+ *
+ * ======================================================================
  * 00. PLACEHOLDERS
  * ======================================================================
  * 
@@ -8148,6 +8181,55 @@ footer,
  * ======================================================================
  * 
  */
+/**
+  * ADD FONTS
+  * -------------------------------------------------------------------
+  */
+@font-face {
+  font-family: "Cooper Hewitt Bold";
+  src: url("../fonts/CooperHewitt/CooperHewitt-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Bold.woff2") format("woff2"), url("../fonts/CooperHewitt/CooperHewitt-Bold.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Bold.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Bold.svg?#webfont") format("svg");
+  /* Legacy iOS */
+  font-weight: "bold";
+  font-style: "normal"; }
+
+@font-face {
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/CooperHewitt/CooperHewitt-BoldItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-BoldItalic.woff2") format("woff2"), url("../fonts/CooperHewitt/CooperHewitt-BoldItalic.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-BoldItalic.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-BoldItalic.svg?#webfont") format("svg");
+  /* Legacy iOS */
+  font-weight: "bold";
+  font-style: "italic"; }
+
+@font-face {
+  font-family: "Cooper Hewitt Book";
+  src: url("../fonts/CooperHewitt/CooperHewitt-Book.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-Book.woff2") format("woff2"), url("../fonts/CooperHewitt/CooperHewitt-Book.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-Book.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-Book.svg?#webfont") format("svg");
+  /* Legacy iOS */
+  font-weight: "book";
+  font-style: "italic"; }
+
+@font-face {
+  font-family: "Cooper Hewitt";
+  src: url("../fonts/CooperHewitt/CooperHewitt-CooperHewitt-BookItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/CooperHewitt/CooperHewitt-CooperHewitt-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/CooperHewitt/CooperHewitt-CooperHewitt-BookItalic.woff2") format("woff2"), url("../fonts/CooperHewitt/CooperHewitt-CooperHewitt-BookItalic.woff") format("woff"), url("../fonts/CooperHewitt/CooperHewitt-CooperHewitt-BookItalic.ttf") format("truetype"), url("../fonts/CooperHewitt/CooperHewitt-CooperHewitt-BookItalic.svg?#webfont") format("svg");
+  /* Legacy iOS */
+  font-weight: "book";
+  font-style: "italic"; }
+
+@font-face {
+  font-family: "Qontra";
+  src: url("../fonts/Qontra/Qontra.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/Qontra/Qontra.eot?#iefix") format("embedded-opentype"), url("../fonts/Qontra/Qontra.woff2") format("woff2"), url("../fonts/Qontra/Qontra.woff") format("woff"), url("../fonts/Qontra/Qontra.ttf") format("truetype"), url("../fonts/Qontra/Qontra.svg?#webfont") format("svg");
+  /* Legacy iOS */
+  font-weight: "normal";
+  font-style: "normal"; }
+
 /**
   * components/ (or modules/)/
   * -------------------------------------------------------------------
